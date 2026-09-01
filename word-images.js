@@ -30,6 +30,13 @@ const WORD_IMAGE_GROUPS = [
     label: 'Unit 5 A Closer Look 1 – food quantities picture set'
   },
   {
+    unit: 6,
+    words: ['entrance examination','entrance exam','school facilities','outdoor activities','midterm test','midterm','gifted students'],
+    img: 'https://img.loigiaihay.com/picture/2022/0713/task1-acloserlook1-u6-ta7-global.png',
+    source: 'https://loigiaihay.com/tieng-anh-7-unit-6-a-closer-look-1-a108579.html',
+    label: 'Unit 6 A Closer Look 1 – school vocabulary phrases'
+  },
+  {
     unit: 7,
     words: ['traffic light','traffic lights','hospital ahead','no right turn','cycle lane','no cycling','school ahead'],
     img: 'https://img.loigiaihay.com/picture/2023/0329/tieng-anh-7-unit-7-a-closer-look-1-1680056909.jpg',
@@ -49,6 +56,13 @@ const WORD_IMAGE_GROUPS = [
     img: 'https://img.loigiaihay.com/picture/2022/1103/ex2-look1-u10-ta7-global.png',
     source: 'https://loigiaihay.com/tieng-anh-7-unit-10-a-closer-look-1-a108820.html',
     label: 'Unit 10 A Closer Look 1 – energy-source pictures'
+  },
+  {
+    unit: 11,
+    words: ['flying car','bamboo-copter','hyperloop','skyTran','solar-powered ship'],
+    img: 'https://img.loigiaihay.com/picture/2024/0416/1_2.png',
+    source: 'https://loigiaihay.com/tieng-anh-7-unit-11-a-closer-look-1-a108898.html',
+    label: 'Unit 11 A Closer Look 1 – future transport pictures'
   },
   {
     unit: 12,
