@@ -42,8 +42,9 @@
     const original=img.dataset.originalSrc || (isOriginalSourceImage(img)?img.getAttribute('src'):'');
     if(!original) return;
 
+    event.stopImmediatePropagation();
+
     if(img.dataset.proxyTried!=='1'){
-      event.stopImmediatePropagation();
       prepare(img);
       img.dataset.proxyTried='1';
       img.src=proxyUrl(original);
