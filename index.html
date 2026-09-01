@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b6fb8" />
+  <title>Global Success 7 Vocabulary</title>
+  <style>
+    :root{
+      --blue:#0b6fb8; --blue2:#47b9ee; --navy:#10335d; --yellow:#ffd54f;
+      --cream:#fffaf0; --white:#fff; --ink:#18324d; --muted:#6c8298;
+      --green:#2cb67d; --shadow:0 14px 36px rgba(16,51,93,.13);
+      --radius:24px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Trebuchet MS","Segoe UI",system-ui,-apple-system,sans-serif;color:var(--ink);background:
+      radial-gradient(circle at 12% 10%,rgba(255,213,79,.25),transparent 24%),
+      radial-gradient(circle at 90% 20%,rgba(71,185,238,.22),transparent 28%),
+      linear-gradient(180deg,#edf9ff 0,#fffaf0 55%,#f6fbff 100%);min-height:100vh}
+    button,a{font:inherit}.app{max-width:1500px;margin:auto;padding:18px}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(125deg,var(--navy),var(--blue) 55%,var(--blue2));color:white;border-radius:30px;padding:26px 28px;box-shadow:var(--shadow);min-height:170px}
+    .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.12)}
+    .hero:before{width:220px;height:220px;right:-50px;top:-70px}.hero:after{width:120px;height:120px;right:170px;bottom:-65px}
+    .hero-row{display:flex;gap:20px;align-items:center;justify-content:space-between;position:relative;z-index:1}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.16);font-weight:800;font-size:14px}
+    h1{font-size:clamp(30px,4vw,50px);line-height:1;margin:12px 0 8px;letter-spacing:-1.5px}.hero p{margin:0;max-width:720px;opacity:.95;font-size:17px;line-height:1.5}
+    .hero-art{font-size:70px;filter:drop-shadow(0 8px 12px rgba(0,0,0,.16));white-space:nowrap}
+    .progress-wrap{margin-top:18px;display:flex;align-items:center;gap:12px}.progress{height:11px;background:rgba(255,255,255,.2);border-radius:999px;overflow:hidden;flex:1;max-width:520px}.progress>span{display:block;height:100%;width:0;background:var(--yellow);transition:.3s}.progress-text{font-weight:800;font-size:14px}
+    .layout{display:grid;grid-template-columns:285px 1fr;gap:18px;margin-top:18px}
+    .sidebar,.workspace{background:rgba(255,255,255,.92);border:1px solid rgba(16,51,93,.08);box-shadow:var(--shadow);border-radius:var(--radius)}
+    .sidebar{padding:16px;align-self:start;position:sticky;top:14px;max-height:calc(100vh - 28px);overflow:auto}
+    .side-title{display:flex;align-items:center;justify-content:space-between;margin:2px 3px 12px}.side-title strong{font-size:18px}.side-title span{font-size:12px;color:var(--muted)}
+    .unit-list{display:grid;gap:8px}.unit-btn{border:0;background:#f4f9fd;border-radius:16px;padding:12px;cursor:pointer;text-align:left;display:grid;grid-template-columns:42px 1fr 20px;gap:10px;align-items:center;color:var(--ink);transition:.18s}
+    .unit-btn:hover{transform:translateY(-1px);background:#e9f6ff}.unit-btn.active{background:linear-gradient(135deg,#e7f6ff,#fff8d9);outline:2px solid rgba(11,111,184,.25)}
+    .unit-no{width:42px;height:42px;border-radius:13px;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:900}.unit-btn.active .unit-no{background:var(--navy)}
+    .unit-meta b{display:block;font-size:14px}.unit-meta small{display:block;color:var(--muted);margin-top:2px;line-height:1.2}.check{font-size:17px;color:var(--green);opacity:.15}.unit-btn.done .check{opacity:1}
+    .workspace{overflow:hidden}.workspace-head{padding:18px 20px 14px;border-bottom:1px solid #e8eff5;background:linear-gradient(180deg,#fff,#fbfdff)}
+    .crumb{font-size:13px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.08em}.workspace-title{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:5px}.workspace-title h2{margin:0;font-size:clamp(24px,3vw,34px)}
+    .actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:0;border-radius:13px;padding:10px 13px;cursor:pointer;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;gap:7px}.btn-primary{background:var(--blue);color:white}.btn-soft{background:#eef6fb;color:var(--navy)}.btn-done{background:#e8fbf3;color:#187554}.btn:hover{filter:brightness(.98);transform:translateY(-1px)}
+    .tabs{display:flex;gap:8px;padding:12px 20px;background:#fbfdff;border-bottom:1px solid #e8eff5;overflow:auto}.tab{border:0;padding:11px 15px;border-radius:13px;background:#edf4f8;color:var(--navy);font-weight:900;cursor:pointer;white-space:nowrap}.tab.active{background:var(--yellow);color:#543f00}
+    .notice{margin:14px 20px 0;padding:12px 14px;border-radius:14px;background:#fff8df;border:1px solid #ffe394;color:#6a5200;font-size:14px;line-height:1.5;display:flex;gap:10px;align-items:flex-start}.notice b{color:#513d00}
+    .frame-wrap{padding:14px 20px 20px}.frame-shell{position:relative;border:1px solid #dce7ef;border-radius:18px;overflow:hidden;background:#f5f8fb;min-height:680px}.source-frame{display:block;width:100%;height:calc(100vh - 315px);min-height:680px;border:0;background:white}
+    .frame-fallback{position:absolute;right:14px;bottom:14px;max-width:350px;background:rgba(16,51,93,.94);color:white;border-radius:14px;padding:10px 12px;font-size:12px;box-shadow:0 10px 24px rgba(0,0,0,.18);pointer-events:none}.frame-fallback a{color:#ffe47c;pointer-events:auto;font-weight:900}
+    .overview{display:none;padding:22px}.overview.show{display:block}.overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.overview-card{border:1px solid #e1ebf2;background:#fff;border-radius:18px;padding:16px;cursor:pointer;transition:.18s}.overview-card:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(16,51,93,.09)}.overview-card .emoji{font-size:34px}.overview-card h3{margin:8px 0 4px}.overview-card p{margin:0;color:var(--muted);font-size:13px}.status-pill{margin-top:10px;display:inline-block;padding:5px 9px;border-radius:999px;background:#eff5f8;font-size:12px;font-weight:800}.overview-card.done .status-pill{background:#e7faf1;color:#187554}
+    .foot{padding:18px 4px 4px;text-align:center;color:var(--muted);font-size:12px;line-height:1.5}.foot a{color:var(--blue)}
+    @media(max-width:980px){.layout{grid-template-columns:1fr}.sidebar{position:static;max-height:none}.unit-list{grid-template-columns:repeat(3,minmax(0,1fr))}.unit-btn{grid-template-columns:36px 1fr 18px}.unit-no{width:36px;height:36px}.overview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.source-frame{height:70vh}.hero-art{font-size:52px}}
+    @media(max-width:650px){.app{padding:10px}.hero{padding:22px 18px;border-radius:22px}.hero-art{display:none}.unit-list{grid-template-columns:1fr 1fr}.unit-meta small{display:none}.workspace-title{align-items:flex-start}.actions{width:100%}.actions .btn{flex:1;justify-content:center}.tabs,.workspace-head,.frame-wrap{padding-left:12px;padding-right:12px}.notice{margin-left:12px;margin-right:12px}.overview{padding:14px}.overview-grid{grid-template-columns:1fr}.frame-shell,.source-frame{min-height:620px}.source-frame{height:72vh}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <header class="hero">
+    <div class="hero-row">
+      <div>
+        <span class="badge">🌟 GRADE 7 • GLOBAL SUCCESS</span>
+        <h1>Vocabulary Adventure</h1>
+        <p>12 Units • vocabulary source pages • pronunciation/audio/examples • flashcard practice</p>
+        <div class="progress-wrap"><div class="progress"><span id="progressBar"></span></div><div class="progress-text" id="progressText">0/12 completed</div></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">📚✨🃏</div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="side-title"><strong>📖 Units</strong><span>Choose a lesson</span></div>
+      <div class="unit-list" id="unitList"></div>
+    </aside>
+
+    <section class="workspace">
+      <div class="workspace-head">
+        <div class="crumb" id="crumb">UNIT 1</div>
+        <div class="workspace-title">
+          <h2 id="unitTitle">Hobbies</h2>
+          <div class="actions">
+            <a class="btn btn-soft" id="openSource" href="#" target="_blank" rel="noopener">↗ Open source</a>
+            <button class="btn btn-done" id="doneBtn">✓ Mark complete</button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="tabs" aria-label="Study modes">
+        <button class="tab active" data-mode="vocab">📚 Learn Vocabulary</button>
+        <button class="tab" data-mode="flash">🃏 Flashcards</button>
+        <button class="tab" data-mode="overview">🗺️ All Units</button>
+      </nav>
+
+      <div class="notice" id="sourceNotice">
+        <span>💡</span><div><b>Exact-source mode:</b> the original learning page is shown from Loigiaihay so its images, IPA, audio, examples and Vietnamese meanings stay on the original source. If your browser blocks the embedded page, use <b>Open source</b>.</div>
+      </div>
+
+      <div class="frame-wrap" id="frameWrap">
+        <div class="frame-shell">
+          <iframe class="source-frame" id="sourceFrame" title="Vocabulary source" loading="eager" allow="autoplay; fullscreen; clipboard-read; clipboard-write" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <div class="frame-fallback">If the page does not appear, the source may block embedding. <a id="fallbackLink" href="#" target="_blank" rel="noopener">Open it in a new tab ↗</a></div>
+        </div>
+      </div>
+
+      <div class="overview" id="overview"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    Learning shell created for Global Success 7. Vocabulary/media remain served by their original source pages; this site does not re-host those source assets.
+  </footer>
+</div>
+
+<script>
+const units = [
+  {n:1,title:'Hobbies',emoji:'🎨',vocab:'https://loigiaihay.com/tieng-anh-7-unit-1-tu-vung-a109314.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-1-tieng-anh-7-global-success-a108001.html'},
+  {n:2,title:'Healthy Living',emoji:'🥗',vocab:'https://loigiaihay.com/tieng-anh-7-unit-2-tu-vung-a109357.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-2-tieng-anh-7-global-success-a110546.html'},
+  {n:3,title:'Community Service',emoji:'🤝',vocab:'https://loigiaihay.com/tieng-anh-7-unit-3-tu-vung-a109370.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-3-tieng-anh-7-global-success-a110548.html'},
+  {n:4,title:'Music and Arts',emoji:'🎵',vocab:'https://loigiaihay.com/tieng-anh-7-unit-4-tu-vung-a109386.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-4-tieng-anh-7-global-success-a110549.html'},
+  {n:5,title:'Food and Drink',emoji:'🍜',vocab:'https://loigiaihay.com/tieng-anh-7-unit-5-tu-vung-a109496.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-5-tieng-anh-7-global-success-a110550.html'},
+  {n:6,title:'A Visit to a School',emoji:'🏫',vocab:'https://loigiaihay.com/tieng-anh-7-unit-6-tu-vung-a109508.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-6-tieng-anh-7-global-success-a110551.html'},
+  {n:7,title:'Traffic',emoji:'🚦',vocab:'https://loigiaihay.com/tieng-anh-7-unit-7-tu-vung-a109518.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-7-tieng-anh-7-global-success-a110608.html'},
+  {n:8,title:'Films',emoji:'🎬',vocab:'https://loigiaihay.com/tieng-anh-7-unit-8-tu-vung-a109779.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-8-tieng-anh-7-global-success-a110610.html'},
+  {n:9,title:'Festivals Around the World',emoji:'🎉',vocab:'https://loigiaihay.com/tieng-anh-7-unit-9-tu-vung-a109803.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-9-tieng-anh-7-global-success-a110612.html'},
+  {n:10,title:'Energy Sources',emoji:'⚡',vocab:'https://loigiaihay.com/tieng-anh-7-unit-10-tu-vung-a109869.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-10-tieng-anh-7-global-success-a110614.html'},
+  {n:11,title:'Travelling in the Future',emoji:'🚀',vocab:'https://loigiaihay.com/tieng-anh-7-unit-11-tu-vung-a109947.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-11-tieng-anh-7-global-success-a110616.html'},
+  {n:12,title:'English-Speaking Countries',emoji:'🌍',vocab:'https://loigiaihay.com/tieng-anh-7-unit-12-tu-vung-a109952.html',flash:'https://loigiaihay.com/luyen-tap-tu-vung-unit-12-tieng-anh-7-global-success-a110617.html'}
+];
+
+let current = Number(localStorage.getItem('gs7-current') || 1);
+let mode = localStorage.getItem('gs7-mode') || 'vocab';
+if(!['vocab','flash','overview'].includes(mode)) mode='vocab';
+let completed = new Set(JSON.parse(localStorage.getItem('gs7-completed') || '[]'));
+
+const unitList = document.getElementById('unitList');
+const frame = document.getElementById('sourceFrame');
+const frameWrap = document.getElementById('frameWrap');
+const overview = document.getElementById('overview');
+const notice = document.getElementById('sourceNotice');
+const openSource = document.getElementById('openSource');
+const fallbackLink = document.getElementById('fallbackLink');
+const doneBtn = document.getElementById('doneBtn');
+
+function save(){
+  localStorage.setItem('gs7-current',current);
+  localStorage.setItem('gs7-mode',mode);
+  localStorage.setItem('gs7-completed',JSON.stringify([...completed]));
+}
+function unit(){return units.find(x=>x.n===current) || units[0]}
+function sourceUrl(){const u=unit(); return mode==='flash'?u.flash:u.vocab}
+function updateProgress(){
+  const count=completed.size;
+  document.getElementById('progressBar').style.width=(count/12*100)+'%';
+  document.getElementById('progressText').textContent=`${count}/12 completed`;
+}
+function renderList(){
+  unitList.innerHTML=units.map(u=>`<button class="unit-btn ${u.n===current?'active':''} ${completed.has(u.n)?'done':''}" data-unit="${u.n}">
+    <span class="unit-no">${u.n}</span><span class="unit-meta"><b>${u.emoji} ${u.title}</b><small>Learn + Flashcards</small></span><span class="check">●</span>
+  </button>`).join('');
+  unitList.querySelectorAll('[data-unit]').forEach(b=>b.onclick=()=>{current=Number(b.dataset.unit); if(mode==='overview')mode='vocab'; save();render();window.scrollTo({top:0,behavior:'smooth'})});
+}
+function renderOverview(){
+  overview.innerHTML=`<div class="overview-grid">${units.map(u=>`<article class="overview-card ${completed.has(u.n)?'done':''}" data-overview-unit="${u.n}"><div class="emoji">${u.emoji}</div><h3>Unit ${u.n}: ${u.title}</h3><p>Open vocabulary and flashcard practice.</p><span class="status-pill">${completed.has(u.n)?'✓ Completed':'Start learning →'}</span></article>`).join('')}</div>`;
+  overview.querySelectorAll('[data-overview-unit]').forEach(c=>c.onclick=()=>{current=Number(c.dataset.overviewUnit);mode='vocab';save();render()});
+}
+function renderTabs(){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.mode===mode));
+}
+function render(){
+  const u=unit();
+  document.getElementById('crumb').textContent=`UNIT ${u.n} • GLOBAL SUCCESS 7`;
+  document.getElementById('unitTitle').textContent=`${u.emoji} ${u.title}`;
+  doneBtn.textContent=completed.has(u.n)?'✓ Completed':'✓ Mark complete';
+  doneBtn.style.opacity=completed.has(u.n)?'.72':'1';
+  renderList(); renderTabs(); renderOverview(); updateProgress();
+  if(mode==='overview'){
+    frameWrap.style.display='none'; notice.style.display='none'; overview.classList.add('show');
+    openSource.style.display='none';
+  }else{
+    frameWrap.style.display='block'; notice.style.display='flex'; overview.classList.remove('show'); openSource.style.display='inline-flex';
+    const url=sourceUrl();
+    if(frame.src!==url) frame.src=url;
+    openSource.href=url; fallbackLink.href=url;
+    openSource.innerHTML=mode==='flash'?'↗ Open flashcards':'↗ Open source';
+  }
+}
+
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{mode=t.dataset.mode;save();render()}));
+doneBtn.addEventListener('click',()=>{if(completed.has(current)) completed.delete(current); else completed.add(current);save();render()});
+render();
+</script>
+</body>
+</html>
